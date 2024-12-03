@@ -86,8 +86,8 @@ const BlogForm = () => {
   const onSubmit = async (data: BlogData) => {
     try {
       const url = isEditMode
-        ? `/api/blogs/${blogId}` // Use the blog ID for editing
-        : "/api/blogs"; // Endpoint for creating a new blog
+        ? `api/blogs/${blogId}` // Use the blog ID for editing
+        : "api/blogs"; // Endpoint for creating a new blog
 
       const method = isEditMode ? "PATCH" : "POST"; // PATCH for editing, POST for creating
 
